@@ -1,0 +1,10 @@
+<ul *ngIf="show" class="list-group">
+    <li *ngFor='let user of users'>{{user.name }} {{user.username }} {{user.username }} {{user.email }}</li>
+    <!--Que me haga una lista ordenada y dentro me haga el recorrido con ngfor
+    donde tengo una variable let deninada users y que lo optenga desde users-->
+    <img [src]="imgLogo" alt="" class="logoA">
+</ul>
+
+<!--<button (click)="show=!show">{{show? 'Ocultar':'Mostrar'}}</button>-->
+
+<button (click)="mostrarLista()"> {{show? 'Ocultar':'Mostrar'}} </button>

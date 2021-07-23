@@ -1,0 +1,11 @@
+
+
+<ol *ngFor="let comment of comments" class="list-group list-group-numbered">
+    <li class="list-group-item d-flex justify-content-between align-items-start">
+      <div class="ms-2 me-auto">
+        <div class="fw-bold">Usuario: {{comment.name}}</div>
+        Comentario: {{comment.body}}
+      </div>
+      <span class="badge bg-primary rounded-pill">Correo: {{comment.email}}</span>
+    </li>
+  </ol>
